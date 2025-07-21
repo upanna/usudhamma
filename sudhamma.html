@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ကျိုက္ကော်ပညာဒါနဖောင်ဒေးရှင်</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Padauk', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f7;
+        }
+        
+        .saffron-bg {
+            background-color: #FF9933;
+        }
+        
+        .maroon-bg {
+            background-color: #800000;
+        }
+        
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .saffron-text {
+            color: #FF9933;
+        }
+        
+        .maroon-text {
+            color: #800000;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header with Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b5706f98-66ad-40cf-9e4b-e24129009670.png" alt="Golden Buddhist stupa with rays of light shining behind it on a purple background" class="h-12 w-12 rounded-full">
+                <h1 class="text-xl font-bold maroon-text">ကျိုက္ကော်ပညာဒါနဖောင်ဒေးရှင်း</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="maroon-text hover:saffron-text transition">ပင်မစာမျက်နှာ</a>
+                <a href="#posts" class="maroon-text hover:saffron-text transition">ပို့စ်များ</a>
+                <a href="#membership" class="maroon-text hover:saffron-text transition">အသင်းဝင်ရန်</a>
+                <a href="#statements" class="maroon-text hover:saffron-text transition">ကြေညာချက်များ</a>
+                <a href="#live" class="maroon-text hover:saffron-text transition">တိုက်ရိုက်ထုတ်လွှင့်ချက်</a>
+            </nav>
+            <button class="md:hidden maroon-text">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Notice Banner -->
+    <div class="bg-yellow-100 border-l-4 border-yellow-500 px-4 py-3 relative">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <svg class="h-5 w-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                </svg>
+                <p class="ml-3 font-medium"> ထိုင်းနိုင်ငံ၊ ကရင်ရိုးရာလက်ချည်းပွဲတော်ကို ၂၄.၈.၂၀၂၅၊ တနင်္ဂနွေနေ့ တွင်ကျင်းပပြုလုပ်သွားပါမည်</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-12 bg-gradient-to-r from-orange-50 to-yellow-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 maroon-text">ကျိုက္ကော်ပညာဒါနဖောင်ဒေးရှင်း</h2>
+                <p class="text-lg mb-6"> ကျိုက္ကော်ပညာဒါနဖောင်ဒေးရှင်းသည် မွန်ပြည်နယ်၊ သထုံခရိုင်၊  <br>
+သုဝဏ္ဏဝတီမြို့တော်၊ သုခိတာရုံကျောင်းတိုက်တွင် တည်ရှိပြီး  ကျိုက်က္ကော်၊ ဓမ္မဒူတသုခိတာရုံဆရာတာ် ဒေါက်တာ ဘဒ္ဒန္တသုဓမ္မ က ဖွဲ့စည်းတည်ထောင်တော်မူထားပါသည်။</p>
+                <div class="flex space-x-4">
+                    <a href="#membership" class="px-6 py-2 bg-saffron-bg text-white rounded hover:bg-opacity-90 transition">အသင်းဝင်ရန်</a>
+                    <a href="#donate" class="px-6 py-2 border border-saffron-bg text-saffron-bg rounded hover:bg-saffron-bg hover:text-white transition">လှူဒါန်းရန်</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/998b5f42-e3a9-4a5b-bfec-fe1ffcdb2d3a.png" alt="Group of Buddhist monks and lay people sitting in meditation in a peaceful temple setting" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <!-- Posts Section -->
+        <section id="posts" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 border-b-2 border-saffron-bg pb-2 maroon-text">ပို့စ်များ</h2>
+            
+            <!-- Post Form -->
+            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h3 class="text-xl font-semibold mb-4 maroon-text">ပို့စ်တင်ရန်</h3>
+                <form id="postForm" class="space-y-4">
+                    <div>
+                        <label for="postTitle" class="block text-sm font-medium mb-1">ခေါင်းစဥ်</label>
+                        <input type="text" id="postTitle" class="w-full px-3 py-2 border rounded" required>
+                    </div>
+                    <div>
+                        <label for="postContent" class="block text-sm font-medium mb-1">အကြောင်းအရာ</label>
+                        <textarea id="postContent" rows="4" class="w-full px-3 py-2 border rounded" required></textarea>
+                    </div>
+                    <div>
+                        <label for="postImage" class="block text-sm font-medium mb-1">ဓာတ်ပုံ (မထည့်လည်းရပါသည်)</label>
+                        <input type="file" id="postImage" class="w-full px-3 py-2 border rounded">
+                    </div>
+                    <button type="submit" class="px-4 py-2 bg-saffron-bg text-white rounded hover:bg-opacity-90">တင်ပါ</button>
+                </form>
+            </div>
+            
+            <!-- Posts Display -->
+            <div id="postsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Sample Post 1 -->
+                <div class="post-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a3d19210-b5bd-421f-961d-0606c18a0efd.png" alt="Buddha statue with golden light in background at a temple" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 maroon-text">ဓမ္မကထိက ဆရာတော် ဦးသုဓမ္မ၏ ဟောပြောချက်</h3>
+                        <p class="text-sm text-gray-600 mb-3">ပဋိစ္စသမုပ္ပါဒ်တရားတော်၏ အခြေခံမူများကို အသေးစိတ် ရှင်းလင်းချက်။</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">မေလ ၁၅၊ ၂၀၂၄</span>
+                            <button class="text-saffron-bg hover:underline">ဆက်လက်ဖတ်ရန်</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sample Post 2 -->
+                <div class="post-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 maroon-text">နှစ်ပတ်လည် ကရင်ရိုးရာလက်ချည်ပွဲအကြောင်း</h3>
+                        <p class="text-sm text-gray-600 mb-3">ကျေးဇူးပြု၍ နောက်ဆုံးထား အတည်ပြုပေးပါ။</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">မေလ ၁၀၊ ၂၀၂၄</span>
+                            <button class="text-saffron-bg hover:underline">ဆက်လက်ဖတ်ရန်</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Membership Section -->
+        <section id="membership" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 border-b-2 border-saffron-bg pb-2 maroon-text">အသင်းဝင်ရန်</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <form id="memberForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium mb-1">အမည်</label>
+                        <input type="text" id="name" class="w-full px-3 py-2 border rounded" required>
+                    </div>
+                    <div>
+                        <label for="nrc" class="block text-sm font-medium mb-1">မှတ်ပုံတင်နံပါတ်</label>
+                        <input type="text" id="nrc" class="w-full px-3 py-2 border rounded" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium mb-1">ဖုန်းနံပါတ်</label>
+                        <input type="tel" id="phone" class="w-full px-3 py-2 border rounded" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-1">အီးမေးလ်</label>
+                        <input type="email" id="email" class="w-full px-3 py-2 border rounded">
+                    </div>
+                    <div>
+                        <label for="address" class="block text-sm font-medium mb-1">နေရပ်လိပ်စာ</label>
+                        <textarea id="address" rows="2" class="w-full px-3 py-2 border rounded" required></textarea>
+                    </div>
+                    <div>
+                        <label for="occupation" class="block text-sm font-medium mb-1">အလုပ်အကိုင်</label>
+                        <input type="text" id="occupation" class="w-full px-3 py-2 border rounded" required>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium mb-1">ပါဝင်လိုသော အစီအစဉ်</label>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2">  KECF
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> KCAA
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2">  ပညာဒါနဖောင်းဒေရှင်း
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> အနုပညာ
+                            </label>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 flex justify-center">
+                        <button type="submit" class="px-6 py-2 bg-saffron-bg text-white rounded hover:bg-opacity-90">ဖောင်ဖြည့်ပါ</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Statements Section -->
+        <section id="statements" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 border-b-2 border-saffron-bg pb-2 maroon-text">ကြေညာချက်များ</h2>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <!-- Statement Form -->
+                <div class="p-6 border-b">
+                    <h3 class="text-xl font-semibold mb-4 maroon-text">ကြေညာချက်ထုတ်ပြန်ရန်</h3>
+                    <form id="statementForm" class="space-y-4">
+                        <div>
+                            <label for="statementTitle" class="block text-sm font-medium mb-1">ခေါင်းစဥ်</label>
+                            <input type="text" id="statementTitle" class="w-full px-3 py-2 border rounded" required>
+                        </div>
+                        <div>
+                            <label for="statementContent" class="block text-sm font-medium mb-1">အကြောင်းအရာ</label>
+                            <textarea id="statementContent" rows="4" class="w-full px-3 py-2 border rounded" required></textarea>
+                        </div>
+                        <div class="flex justify-end">
+                            <button type="submit" class="px-4 py-2 bg-saffron-bg text-white rounded hover:bg-opacity-90">ထုတ်ပြန်ပါ</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Statements List -->
+                <div id="statementsContainer">
+                    <!-- Sample Statement 1 -->
+                    <div class="p-6 border-b">
+                        <h3 class="text-lg font-semibold mb-2 maroon-text">၂၀၂၅ နှစ်ပတ်လည်အစည်းအဝေးကြေညာချက်</h3>
+                        <p class="mb-3">ကျေးဇူးပြု၍ အစည်းအဝေးသို့ နောက်ဆုံးထား တက်ရောက်ပေးပါရန် မေတ္တာရပ်ခံအပ်ပါသည်။</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">ဩဂုတ်လ ၂၃၊ ၂၀၂၅</span>
+                            <a href="#" class="text-saffron-bg hover:underline">PDF ဖိုင်ဒေါင်းလုဒ်</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Sample Statement 2 -->
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 maroon-text">ဘဏ္ဍာရေးနှစ်ပတ်လည် အစီရင်ခံစာ</h3>
+                        <p class="mb-3">ကျွန်ုပ်တို့အဖွဲ့၏ ၂၀၂၄ ဘဏ္ဍာရေးနှစ်အတွက် အစီရင်ခံစာ။</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">ဩဂုတ်လ ၂၃၊ ၂၀၂၅</span>
+                            <a href="#" class="text-saffron-bg hover:underline">PDF ဖိုင်ဒေါင်းလုဒ်</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Live Streaming Section -->
+        <section id="live" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 border-b-2 border-saffron-bg pb-2 maroon-text">တိုက်ရိုက်ထုတ်လွှင့်ချက်</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <!-- YouTube Live Embed -->
+                <div class="relative pb-[56.25%] h-0 mb-6">
+                    <iframe id="liveStream" class="absolute top-0 left-0 w-full h-full rounded" src="https://www.youtube.com/watch?v=smNQ9P4vPH8/embed/?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <!-- Upcoming Events -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 maroon-text">သင်တန်းနှင့် ပွဲတော်</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1 mr-3 text-saffron-bg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium">ဩဂုတ်လ ၂၀၊ ၂၀၂၅ (၁၀း၀၀) - အဘိဓမ္မာသင်တန်း</p>
+                                <p class="text-sm text-gray-600">ဆရာတော်ဦးသုဓမ္မမှ ကြီးမှူးဟောကြားမည်။</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1 mr-3 text-saffron-bg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium">စက်တင်ဘာ ၂၅၊ ၂၀၂၅ (၁၄း၀၀) - ဗုဒ္ဓပူဇနိယပွဲတော်</p>
+                                <p class="text-sm text-gray-600">နှစ်စဉ်ကျင်းပသည့် ရတနာသုံးပါးကို ဖူးမြော်ကန်တော့ပွဲ။</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Donation Section -->
+        <section id="donate" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 border-b-2 border-saffron-bg pb-2 maroon-text">လှုဒါန်းရန်</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 maroon-text">ဘဏ်အကောင့်များ</h3>
+                    <div class="space-y-4">
+                        <div class="p-4 border rounded">
+                            <p class="font-medium">KBZ Bank</p>
+                            <p>အကောင့်နှင့် -  09796567995</p>
+                            <p>အမည် -   Dr.U Sudhamma</p>
+                        </div>
+                        <div class="p-4 border rounded">
+                            <p class="font-medium">AYA Bank</p>
+                            <p>အကောင့်နှင့် -  09796567995</p>
+                            <p>အမည် - Ven.Sudhamma</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 maroon-text">WavePay နှင့် လှုဒါန်းရန်</h3>
+                    <div class="p-4 border rounded">
+                        <p class="mb-4">WavePay ဖြင့် လှုဒါန်းလိုပါက အောက်ပါဖုန်းနံပါတ်သို့ ပေးပို့နိုင်ပါသည်။</p>
+                        <div class="flex items-center justify-center">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8a0ac3a9-1c66-41d3-b63d-5b3b93757503.png" alt="WavePay QR code for donations to Kyoe Kauk Pyinnya Dana Foundation with the phone number 09765432100" class="w-48 h-48">
+                        </div>
+                        <p class="text-center mt-4">ဖုန်းနံပါတ် -  09796567995</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-maroon-bg text-black pt-8 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">ဆက်သွယ်ရန်</h3>
+                    <p> ဦးသုဓမ္မ(ကျိုက္ကောသုခိတာရုံကျောင်းတိုက်</p>
+                    <p>ဖုန်း - 09769567995</p>
+                    <p>အီးမေးလ် - info@usudhamma.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">လုပ်ငန်းများ</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-200 transition"> ကျိုက္ကောပညာဒါနဖောင်ဒေရှင်း</a></li>
+                        <li><a href="#" class="hover:text-yellow-200 transition">ကရင်အနုပညာရှင်အဖွဲ့</a></li>
+                        <li><a href="#" class="hover:text-yellow-200 transition">ဓမ္မဒူတသုခိတာရုံကျောင်းတိုက်</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">ကျေးဇူးတင်လွှာ</h3>
+                    <p> ကျိုက္ကောပညာဒါနဖောင်ဒေရှင်း၏ လုပ်ငန်းများကို ထောက်ပံ့လှူဒါန်းလျက်ကူညီပေးသော <br>
+ ဒါယကာ၊ ဒါယိကာမများအား ကျေးဇူးအထူးတင်ရှိပါသည်။</p>
+                </div>
+            </div>
+            <div class="border-t border-opacity-20 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p>© ၂၀၂၄ ကျိုက္ကော်ပညာဒါနဖောင်ဒေးရှင်. အားလုံးသော အခွင့်အရေးများ လုံခြုံစွာ သိမ်းဆည်းထားပါသည်။</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-yellow-200 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-yellow-200 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-yellow-200 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Form handling would go here in a real implementation
+        document.getElementById('postForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('သင်၏ပို့စ်ကို လက်ခံရရှိပါသည်။ ကျေးဇူးတင်ပါသည်။');
+            this.reset();
+        });
+        
+        document.getElementById('memberForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('အသင်းဝင်ဖောင်အား လက်ခံရရှိပါသည်။ ကျေးဇူးတင်ပါသည်။');
+            this.reset();
+        });
+        
+        document.getElementById('statementForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('သင်ဖန်တီးသော ကြေညာချက်သည် အောင်မြင်စွာ တင်ပြီးပါပြီ။');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+
